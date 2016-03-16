@@ -106,8 +106,9 @@ Probleme traditionell:
 * Zu viele Artefakte (Noise)
 
 #### Manifest
+
 |Agil|Sonst|
-|---|
+|---|---|
 |Individuals/Interactions|Processes/Tools|
 |Working Software|Comprehensive Docs|
 |Customer Collaboration|Contract Negotiation|
@@ -267,7 +268,7 @@ Typen:
 <img src="Zusammenfassung/requirement-class-facets.png" width=400 />  
 
 |Form|Definition|Type of verification|
-|---|
+|---|---|---|
 |Operational|Spec of operations or data|Review, test, formal verification|
 |Quantitative|Spec of measurable qualities|Measurement|
 |Qualitative|Spec of goals|Not directly possible: Stakeholder judgement or derived metrics|
