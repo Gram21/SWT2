@@ -457,7 +457,7 @@ Fabbrini Qualitaetsmodell:
 ![alt](Zusammenfassung/resi.png)
 
 ||ABC Video Rental||Monitoring Pressure||
-|---|
+|---|---|---|---|---|
 ||Manuell|RESI|Manuell|RESI|
 |Summe|47.3|62.2|24.3|45.8|
 |Recall|14%|18%|26%|48%|
