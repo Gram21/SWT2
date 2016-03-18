@@ -114,11 +114,11 @@ Technik vs. Theorie vs. Empirie
 ## Experimente
 ### Nagappan, Murphy, Basilli
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Nagappan, Murphy, Basilli|Influence of Org. Structure on SW Quality|Fallstudie|Microsoft/Vista|2/3 als Trainingsdaten, 1/3 zur Auswertung, 50x Kreuzvalidierung|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |#of Engineers, #of Ex-Engineers, Edit Freq., Depth of Masater Ownership, %of Org contributing, Level of Org Code Ownership, Overall Org Ownership, Org. Intersection Factor|ist fehleranfaellig?|Praezision: 86.2%, Ausbeute: 84%|Schlecht auf kleinere Projekte/andere Unternehmen uebertragbar|VCS ueber 7 Jahre, 3404 libs, 50mio LOC, 250 Devs|
 * Metriken ueberschneidungsfrei?: Analyse ueber Step-wise Regression/Principal Component
 * Vorhersagemodell (Logistische Regression)
@@ -135,22 +135,22 @@ Technik vs. Theorie vs. Empirie
 
 ### Müller u. Hagner
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Müller u. Hagner|Experiment about Test-first Programming|Feldexperiment|KIT, XP Praktikum|2 Gruppen (Test first vs nicht), jUnit, rand. Zuordnung, Akzeptanztest zur QA, Abschlusstest mit Goldstandard|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Testtechnik|Entwicklungsdauer und Programmkorrektheit|Zeit: Gleich, Korrekt vor QA: Control Group signifikant besser, nach QA: Test-firs leicht besser|Studenten, neue Technik XP, keine Ueberpruefung, ob Test-First korrekt benutzt, Enge Aufgabenstellung, wenige Teilnehmer|20 Akzeptanztestfaelle, Zufallstest: randomisierter Graph, 720k Ops, 7.5m Asserts|
 
 * Test-first verleitet zu falscher Sicherheit
 
 ### Knight & Leveson
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Knight & Leveson|Exp. Eval of the assumption of independence in multi-version progr.|(Falsifikations)Experiment|University of Virginia, University of California at Irvine, 1984|Anti-missile System, 15 vorgegebene Tests, 200-Mindestqualitaets-Tests, Gold-Standard Test|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 ||Reading time, design time, debug time, (common) Test-Fehler|Programm-Fehleranfaelligkeit: 98%. Wahrscheinlichkeit Mehrfachversager: 0.012%.  Trotzdem Haeufung von Mehrfachversagern|Sehr gute Spezifikation|27 Versionen, 99/9% zuverlaessig, 100 random Akzeptanztests, 1m random Tests (sehr hardware-fordernd damals!), 14 BA, 8 MA, 4 Doktor Studenten (nicht zwangslaeufig Informatik)|
 
 * Programmierer machen an gleichen Stellen Fehler
@@ -159,11 +159,11 @@ Technik vs. Theorie vs. Empirie
 
 ### Molokken, Jorgensen
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Molokken, Jorgensen|Survey on SW Estimation in Norwegian Industry|Umfrage|Norwegen, Kostenschaetzung|30-70min strukturierte Interviews, aufgezeichnet, nachtr. ausgewertet|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Schaetzmethode|Schaetzpraezision, Abweichungsgroesse|Expertenschaetzung dominant, Stand wie vor 20 Jahren|Valide|18 Firmen, 52 Projekte, zw. 180-14000h (avg 3124h)|
 
 * Projektleiter ueberschaetzen Genauigkeit: geschaetzt 45% im Rahmen, real: 10%
@@ -171,11 +171,11 @@ Technik vs. Theorie vs. Empirie
 
 ### Zimmermann, Nagappan
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Zimmermann, Nagappan|Cross-project Defect Prediction|Microsoft (Netherlands)|Ex-Post-Facto Studie|Regressionsmodell erstellen, Welch t-Test|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Project Characteristics: LOC, Team size, open vs. closed, local vs. distributed, C vs. CPP, Tools, desktop vs mobile|Defekt-Vorhersage-Übereinstimmung|Firefox -> IE: 76% Precision, 81% Recall, umgekehrt 4.1% Recall, nur 3.4% aller 622 Projektpaare gut. Projektcharacteristiken keine guten Vorhersager|Nicht ohne weiteres übertragbar|40 Characteristics, 28 Projekte|
 
 * Varianzen nicht gleich => Welch t-Test
@@ -184,11 +184,11 @@ Technik vs. Theorie vs. Empirie
 
 ### Nagappan
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Nagappan|Mining Metrics to Predict Component Failures|Ex-Post-Facto|Microsoft, Fehlerdatenbanken minen|Randomisierte Projektnamen A,B,C..., Vorhersager bauen mit Principal Component Analysis|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Code-Metriken|Post-Release Defekte|Korrelation da, aber nicht 1 für alle Projekte|Nur Microsoft|5 Projekte, >1m LOC|
 * Projekte
   * Internet Explorer 6
@@ -207,11 +207,11 @@ Technik vs. Theorie vs. Empirie
 
 ### Sobel
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Sobel|Formal Methods Application|Quasi-Laborexperiment|Uni Ohio, Uni Miami|2 Gruppen Formal, nicht-Formal, Vortest, Projekt|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Formale Methoden?|Correctness, Concisenex, Complexity|Nicht statistsisch signifikant, "Better Correctness", "complex problem solving skills"|Nein|Fehlerhafter Projektaufbau, Nachtest mit motivierten Formale-Methoden Studis, 6 manuell Testfaelle, Programme avg. 130 Zeilen|
 
 * Vortest (ACT) => Gleiche Gruppenstaerke
@@ -239,11 +239,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Pfleeger & Hatton
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Pfleeger & Hatton|Investigating the Influence of Formal Methods|Fallstudie|1990 -1992, Flugsicherungs-Informationssystem CDIS|3000 Defekte während Entwicklung und 147 nach Auslieferung|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Verwendetes Entwurfsverfahren (Formal or not)|Wie viele Moduländerungen pro Fehler|Formale Methoden (mit anderen Techniken kombiniert) führen zu weniger Defects/KLOC. Einzeln fraglich|Ja, weil industrielles Umfeld|200.000 LOC|
 
 * Verschiedene Spezifikationsmethoden:
@@ -258,11 +258,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Müller, Typke, Hagner
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Müller, Typke, Hagner|2 Controlled Experiments Concerning Usefulness of Assertions|Laborexperiment|1999/2000, Diplomstudenten, Personal Software process|Training, Gegenbalancierter Experimententwurf, wenige Daten, nicht normalverteilt => Wilcoxon Rangsumme, 2 Gruppen|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Assertions oder nicht|Zuverlässigkeit, Programmieraufwand (Time), Wiederverwendung|Mehr Zeit, nicht sign., Code reuse tend. höher, nicht sign, tend. zuverlässiger, nicht sign.||22 Stduenten, 9 C, 13 Java|
 * APP (Annotation Preprocessor)
 * jContract
@@ -280,11 +280,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Porter, Siy
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Porter, Siy|Cost-Benefits of Code Inspections in Large Scale Software Development|(Langzeit) Feldexperiment|Lucent Technologies (Bell), reales Softwareprojekt, 1994/1995|Inspektionsstruktur faktoriell|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Inspektoren, Sessions, direkte Reparatur|Effektivität, Gesamtdauer, Kosten|Aufwand: Kein Einfluss, Effektivität: 1p schlecht, 2p so gut wie 4p, mehrere Durchgänge bringen nichts, Reparatur zw. Durchgängen bringt nichts||s.u.|
 
 * Projekt: Übersetzer bauen
@@ -322,11 +322,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
   * Geringe Ueberlappung zwischen Inspektoren
   
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Laitenberger und DeBaud|Perspective-based Reading of Code Documents at Bosch|Feldexperiment|1997, Fraunhofer IESE, C als Sprache|Baue 10-15 **reale** Defekte in 200-300 LOC ein, Faktoriell: Dokumenttyp (generisch vs Bosch), Perspektive (3x) => 2x3, jeder macht alle 6, zufaellige Nummerierung der Subjekte|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Perspektive, Dokumenttyp - spaeter auch C- und Domaenen-Erfahrung|Erkennungsrate|Rollen aehnlich gut, Meeting besser als einzelne => geringe Rollen-Ueberlappung, Gruppensitzung nicht notwendig (+6%)|Extern: gut|11 prof. Devs, avg. 19 Monate Erfahrung (verzerrt: Ausreisser 10 Jahre)|
 * Perspektiven:
   * Analytiker
@@ -353,11 +353,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Laitenberger, El Emam und Harbich
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Laitenberger, El Emam und Harbich|Internally Replicated Quasi-Experimental Comparison of Checklist and PBR|Quasi-Feldexperiment|1998, Bosch, Fraunhofer IESE|6 Bosch-Dokumente (400-900LOC), 8-16 eingebaute Fehler, 3x mit 20 Teilnehmern: 2 Gruppen, 5 Teams/Gruppe, 2 Personen/Inspektion => 2x2 faktoriell weil gegenbalanciert. Fragebogen|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Checkliste vs PBR|Effectiveness, Zeit fuer Suche => Kosten/Defekt|alpha = 0.1: PBR effektiver, PBR guenstiger. PBR erhoeht Codeverstaendnis|Intern: Nicht echt-random, Extern: echter Code, nur Bosch, keine Vorkenntnisse, echte Devs|60 Devs, C, avg "rather experienced"|
 * Rollen
   * Merge Tester aus vorherigem Experiment; minimale Teamgroesse nach Porter
@@ -377,11 +377,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Chong, Hurlbutt
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Chong, Hurlbutt|Social Dynamics of Pair Programming|Nat./Ethno. Studie|San Fran, Startups (2-4 Jahre)|Beobachtet (Aufnahme) und analysiert|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |1 Startup Driver/Navigator, das andere shared control. B wechselt Teams täglich. Erfahrungsunterschied in Paar|Eingebundenheit (Zeit zw. Control-Wechseln)|Forschungsfrage: Driver/Navigator besser als synchrone Paare?|%|Weekly 2005-2006, 1.5-3h. 6-9 Devs vs 9-10 Devs|
 * Move beyond Driver/Navigator
 * Help Devs stay focused/engaged
@@ -390,11 +390,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Müller
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Müller|Are Reviews an Alternative to Pair Programming?|2004, KIT, XP-Praktikum, Java|Einführung PP/Reviews, Schiebepuzzle+Nullstellen|Gegenbalanciert+Intra-Subjekt, Skill-Matching (-> Vortest). 1. Impl (ohne execution) 2. Review 3. QA mit Acceptance-Test|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Technik: Pair Programming vs Review|Kosten, Korrektheit|PP tendenziell besser als Rev bei Korrektheit, aber nicht signifikant. Paare 7% teurer bei gleicher Korrektheit (nicht sign. Ergebnisse)|Sterblichkeit (3/20), 2*Reifung: Als Reviewer von anderem gelernt|20 Studenten, 6.5 Jahre Prog. Exp. Randomisierte Tests (Goldstandard)|
 * Review = Durchsicht
 * vs. Inspektion: Vorbereitungsphase (nicht praeskriptiv: Inspektionen haben Arbeitsvorscriften)
@@ -409,11 +409,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Arisholm, Gallis, Dyba
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Arisholm, Gallis, Dyba|Pair Programming with Respect to System Complexity and Programmer Expertise|Laborexperiment|Norwegen, 2004/2005, Java Consultants, Büro oder Labor|2x2x3 Faktoriell. Individual Training, Ind. Pretest (ATM), Tasks 2-5: Coffee Machine, 5: Time Sink|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Pair Programming, System-Complexity, Expertise|Duration: Task 2-4, Effort: Person Minutes, Correctness: Binäre Functional Correctness, Abweichung expected output|Für Juniors bringt PP viel: 74% bessere Correctness. Sonst: 84% mehr Effort, 7% mehr Correctness. Komplexität ist starker Einflussfaktor bzgl. PP/EP|Selektion: Wenige echte Juniors. Nonrandomized: Wie buchbar. Correctness: Wurde manuell ermittelt. Störvariable IDE nicht vorgegeben. Incorrekte Datenpunkte entfernt (mehr EP als PP)|300 Devs!!!|
 * 2 Phasen: Einzelprogrammierer
 * Phasen nicht direkt vergleichbar: Viel Zeit vergangen, andere Programmierer-Kompetenzen
@@ -433,7 +433,7 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Systematic Literature Review
 |Autor|Titel|Typ|Ort/Context|
-|---|
+|---|---|---|---|---|
 |Kitchenham|Guidelines for Performing Systematic Literature Reviews|Guide||
 
 * Motivation
@@ -460,11 +460,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
   
 
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Jorgensen, Sheppard|Systematic Review of Software Development Cost Estimation Studies|Meta-Studie|Cost-Estimation, 2005|nur Journals, Vortest mit 30 Papern|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |304 Paper, 76 Zeitschriften, Google Scholar|Themen, Schätzmethoden, Forschungsmethoden|Top-10 enthalten 2/3, Scholar: 30%, Inspec: 60%, G+I: 70%, manuell: 100%|
 
 * Paper sollen standardisierte Schlüsselworte nutzen
@@ -475,11 +475,11 @@ Anderes Verhalten bei Neuem/Ungewöhnlichem
 
 ### Dzidek, Arisholm, Briand (UML)
 |Autor|Titel|Typ|Ort/Context|Aufbau|
-|---|
+|---|---|---|---|---|
 |Dzidek, Arisholm, Briand|A Realistic Empirical Evaluation of the Costs and Benefits of UML in Software Maintenance|Laborexperiment|Norwegen, Consultants|Wartungsaufgaben mit Teilaufgaben (Teilaufgaben Akzeptanztest), Inter-Subjekt (10 UML, 10 nicht), Akzeptanztest (Experimentator)|
 
 |Unabh. Variablen|Abh. Variablen|Ergebnis|Validitaet|sonstiges|
-|---|
+|---|---|---|---|---|
 |Technik: UML vs nicht|Änderungszeit, Zeit+UML Update, Anzahl Abgaben, Entwurfsqualität|UML ohne Update unbedeutend schneller (1.4%), sonst 14% langsamer. Korrektheit signifikant besser. Entwurfsqualität besser|Prof Devs, Zeit für QA nicht erfasst, Falsche Abgaben unnötig gezählt (manche geben einfahch mehr ab). Nur Wartung.|20 Consultants, 5 Aufgaben, 1-2 Wochen, kein Zeitlimit, BESTWeb System: 6 Packages, 50 Klassen, 2900 LOC, Vererbungstiefe 3|
 
 * Abhängige Variablen
