@@ -128,8 +128,18 @@ Probleme traditionell:
 |Responding to change|Following a Plan|
 
 ### XP
+* An ad-hoc process that cannot be replicated
+* Scalability: not usable for large projects
+* Missing documentation
+* Clients need to cooperate in a project
+* Some XP practices are not yet fully validated
+  * pair programming
+  * high learning curve for TDD due to new way of thinking
+
 <img src="pics/xp-components.png" width=500 />  
+
 <img src="pics/xp-process.png" width=600 />  
+
 Nachteile:
 * Kann nicht wiederholt werden
 * Skaliert nicht: nicht anwendbar bei großen Projekten
@@ -310,6 +320,7 @@ Achtung: Beachte Concerns wie in Baum-Grafik um Funktional/Nichtfunktional zu un
 > Am I building the right system?
 
 VS.
+
 > Am I building the system right (=> Verification)
 
 * Inspections, Reviews, Walkthroughs
@@ -382,7 +393,7 @@ VS.
 <img src="pics/mda-keycomponents.png" width=400 />
 
 ### Meta-Model - Definition
-<img src="pics/meta-mode-definition.png" width=600 /> 
+<img src="pics/meta-model-definition.png" width=600 /> 
 
 ### Object Constraint Language (OCL) - siehe SWT1
 * Erweiterung von UML
@@ -963,9 +974,11 @@ Gateway: "An object acts as a gateway to a database table. One instance
 handles all the rows in the table."
 
 Gateway vs. Facade:
-Fac*ade:
+Facade:
+
 * Facade simplifies a more complex API
 * Usually done by the writer of the service for general use
+
 Gateway: “An object that encapsulates access to an external system or resource”
 * Idea similar to Façade
 * But: Gateway is written by client for its particular use
@@ -1197,8 +1210,9 @@ Verschiedenes:
 <img src="pics/clean-architecture.png" width=600 />
 
 “The Dependency Rule”
-  * Source code dependencies always point inwards
-  * That rule applies even for Functions, Classes, Variables, Data formats
+
+* Source code dependencies always point inwards
+* That rule applies even for Functions, Classes, Variables, Data formats
 
 TODO: eventuell genauere erklärung der Schichten
 
@@ -1722,7 +1736,7 @@ Iterative:
 * Software quality assurance
 * Quality impact analysis
 
-#### QUaöity Assurance
+#### Quality Assurance
 "Software quality assurance is the process of detecting and correcting design problems preventing the cost-effective maintenance of the system"
 
 ### Evolution supporting design
