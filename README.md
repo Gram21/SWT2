@@ -15,4 +15,4 @@ Zusammenfassungen für verschiedene Vorlesungen am KIT für den Studiengang Info
 |Formale Systeme                     |Beckert        |WS16/17|[Link](formsys/zusammenfassung.md)|
 |Softwaretechnik II                  |Reussner       |WS16/17|[Link](swt2/Reussner/Zusammenfassung.md)|
 
-Please regard [PR#2]{https://github.com/Gram21/Zusammenfassungen/pull/2} for issues about some representation etc.
+Please regard [PR#2](https://github.com/Gram21/Zusammenfassungen/pull/2) for issues about some representation etc.
