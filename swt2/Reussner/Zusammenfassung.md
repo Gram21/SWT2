@@ -113,6 +113,7 @@ Inkrementel und Evolutionär????
 ## Agile Development
 ### Motivation
 Probleme traditionell:
+
 * Too "heavyweight" processes
 * Goßes Design im Vorfeld
 * Unflexibel
@@ -141,6 +142,7 @@ Probleme traditionell:
 <img src="pics/xp-process.png" width=600 />  
 
 Nachteile:
+
 * Kann nicht wiederholt werden
 * Skaliert nicht: nicht anwendbar bei großen Projekten
 * Keine Docs
@@ -152,6 +154,7 @@ Nachteile:
 
 ### Scrum
 "Agiles Framework"
+
 * 3 Rollen
   * Product owner
     * represents the customer's interest
@@ -230,6 +233,7 @@ Probleme später beheben teurer: Faktor 10x pro Entwicklungsphase
 1. ein Dokument, das 1. oder 2. festhält
 
 Eigenschaften:
+
 * Konsistent
 * Eindeutig
 * Verständlich
@@ -239,6 +243,7 @@ Eigenschaften:
 * Umfang passt zum Risiko
 
 Typen:
+
 * Funktional
 * Qualitativ
 * Einschränkungen
@@ -317,11 +322,12 @@ Achtung: Beachte Concerns wie in Baum-Grafik um Funktional/Nichtfunktional zu un
 * Use cases
 
 ### Requirement Validation
-> Am I building the right system?
+
+> Validation: Am I building the right system?
 
 VS.
 
-> Am I building the system right (=> Verification)
+> Verification: Am I building the system right?
 
 * Inspections, Reviews, Walkthroughs
 * Simulation
@@ -393,6 +399,9 @@ VS.
 <img src="pics/mda-keycomponents.png" width=400 />
 
 ### Meta-Model - Definition
+__Stachowiak__:
+
+<img src="pics/stachowiak-model-definition.png" width=600 />
 <img src="pics/meta-model-definition.png" width=600 /> 
 
 ### Object Constraint Language (OCL) - siehe SWT1
@@ -450,6 +459,7 @@ Unterscheidung nach black- und whitebox
 
 ### Elementary Business Process (EBP)
 Zusammengesetzt aus:
+
 * Aufgabe
 * Person (ausführend)
 * Zeit und Ort
@@ -484,6 +494,7 @@ Zusammengesetzt aus:
 1. Usecases bestimmen, die Akteure befriedigen
 
 Tipps: 
+
 * Keine UI-Elemente in Usecases, 
 * Präzision:
   1. Datenfeldname
@@ -497,7 +508,7 @@ Tipps:
 ### Fully dressed
 1. Preface
   * Scope
-  * Level
+  * Goal Level
   * Primary Actor
 1. Stakeholders und Interessen
 1. Vorbedingungen
@@ -519,6 +530,7 @@ Außerdem in den Folien: Dokumentstruktur
 
 ### Analyse
 Analysis
+
 * Emphasises an investigation of the problem and requirements
 * Rather than a solution
 * Do the right thing
@@ -526,6 +538,7 @@ Analysis
 * E.g. object-oriented analysis (investigation of the domain objects)
 
 Design
+
 * Emphasises a conceptual solution (in software and hardware )
 * Rather than its implementation
 * Do the thing right
@@ -534,6 +547,7 @@ Design
 
 ### System Sequence Diagrams (SSD)
 __TODO:__ Nicht direkt in den Folien aber wichtig da SSD vorkommt.. Neuschreiben? 
+
 * System Boundary wieder wichtig
 * System Events: external events that directly stimulate the software system
 * System Operations: operations that the system as a black box offers
@@ -570,6 +584,7 @@ __TODO:__ Nicht direkt in den Folien aber wichtig da SSD vorkommt.. Neuschreiben
 
 ## Software Architektur
 Problemstellungen:
+
 * Wie wird dokumentiert?
 * Was muss eingekauft werden?
 * Wie wird mit bestehender Software umgegangen? (Einbindung, Anbindung)
@@ -707,6 +722,7 @@ Außerdem:
 
 #### Layered (Reference) Architecture
 Benefits:
+
 * reduces "accidental" complexity
 * improves modifiability
 * clear separation of concerns
@@ -715,11 +731,13 @@ Benefits:
 * simplified testing
 
 Drawbacks:
+
 * usually increases the amount of classes
 * through facades or data transfer objects
 * however, these are patterns in their own right that help to better deal with complexity
 
 Ebenen:
+
 * UI (View)
 * Application (Controller)
 * Domain (Model)
@@ -737,6 +755,7 @@ Viele Klassen in einem Paket/Ebene durch gemeinsames Interface buendeln/zentral 
 
 ## Software Components (Component Based Software Engineering CBSE)
 Definition:
+
 * unit of composition
 * contractually specified interfaces
 * explicit context dependencies
@@ -749,6 +768,7 @@ Warum sind Objekte keine Components?
 
 ### Component Model
 Wie mappt man das Componenten-Prinzip auf eine Programmiersprache?
+
 * Was ist eine Komponente?
 * Wie werden Dienste angeboten?
 * Wie werden Componenten verknuepft/zusammengesetzt?
@@ -756,6 +776,7 @@ Wie mappt man das Componenten-Prinzip auf eine Programmiersprache?
 * Wie werden Componenten aufgefunden/gelistet?
 
 Wichtige Teile:
+
 * Plattform
 * Framework
 * Hilfswerkzeuge
@@ -822,12 +843,14 @@ Modellierung ist wichtig fuer
 <img src="pics/palladio-views.png" width=600 />
 
 Input:
+
 * Usage
 * Hardware
 * External Dependencies
 * Code
 
 Output:
+
 * Antwortzeit
 * Durchsatz
 * Resourcenausnutzung
@@ -844,6 +867,7 @@ Output:
 
 #### Aufgaben von Componenten-Entwicklern
 PCM:
+
 * Specifies components & interfaces
 * Specifies data types
 * Builds composite components
@@ -851,6 +875,7 @@ PCM:
 * Stores modelling & implementation artefacts in repositories
 
 Allgemein:
+
 * Implements components
 * Tests components
 * Maintains components
@@ -876,6 +901,7 @@ Resourcenbeschreibung:
 * CPU, Netzwerk, HDD, RAM
 
 Aufgaben:
+
 * PCM:
   * Modelliert die Resourcenumgebung
   * Setzt sie auf
@@ -895,6 +921,7 @@ Aufgaben:
 
 ## Enterprise Application Architecture
 Enterprise:
+
 * software that supports businesses
 * mainly about display, manipulation, storage of data
   * Persistent data
@@ -906,10 +933,12 @@ Enterprise:
   * Business "illogic"
 
 Business Information Systems:
+
 * support of business processes
 * process business transactions and data
 
 Beispiele:
+
 * Web shop
   * Scalability, Performance
 * Leasing Management System
@@ -927,10 +956,13 @@ Beispiele:
 * Eigene Prozedur fuer jede Art von Request/Transaktion
 
 Advantages:
+
 * Simple procedures that developers understand
 * Easy to connect to simple data sources
 * Transaction boundaries are easy to determine
+
 Problems:
+
 * Does not scale well with complex logic
 * Tends to have duplicate code then
 
@@ -938,9 +970,11 @@ Problems:
 Mischt Daten und Verhalten in einem OO-Modell
 
 Advantages
+
 * Better organizes complex domain logic
 
 Problems
+
 * Steeper learning curve if not familiar with OO
 * Mapping to data source more complex
 
@@ -948,12 +982,14 @@ Problems
 Ein Modul (ein Objekt), dass alle Daten einer Tabelle verwaltet
 
 Advantages
+
 * Straightforward mapping to data
 
 * Separates logic for different concepts
 * Useful if used technology supports it (COM, .NET)
 
 Problems
+
 * No object instances: can be bad for complex logic
 
 ### Data Source Architectural Patterns
@@ -980,6 +1016,7 @@ Facade:
 * Usually done by the writer of the service for general use
 
 Gateway: “An object that encapsulates access to an external system or resource”
+
 * Idea similar to Façade
 * But: Gateway is written by client for its particular use
 
@@ -990,6 +1027,7 @@ Gateway: “An object that encapsulates access to an external system or resource
 * Good choice for very simple domain logic
 
 Probleme:
+
 * Vererbung
 * Objekt-Relationen
 
@@ -1016,11 +1054,13 @@ Probleme:
 Bildet alles auf einzelne Tabelle ab
 
 Pros
+
 * simple database schema: only one table
 * no joins required
 * refactoring that moves fields up or down does not require database changes
 
 Cons
+
 * direct use of tables can be confusing because of unused fields
 * tables can get very large
 * many indexes & frequent locking => loss of performance
@@ -1031,6 +1071,7 @@ Cons
 Eine Tabelle pro Klasse und Vererbungsklasse
 
 Pros
+
 * all columns are relevant for every row
   * tables are easier to understand
   * tables do not waste space
@@ -1038,6 +1079,7 @@ Pros
 * straightforward relationship between domain model and database schema
 
 Cons
+
 * loading an object in most cases means touching multiple tables
   * Joining multiple tables, multiple queries => Performance decreases
 * refactoring: Moving fields up and down in the hierarchy implies changing the database schema
@@ -1049,6 +1091,7 @@ Cons
 Nur nicht-abstrakte Klassen bekommen eigene Tabelle
 
 Pros
+
 * each table is self-contained; no irrelevant fields
   * useful, if applications directly access the database
 * no joins required when reading from concrete mappers
@@ -1057,6 +1100,7 @@ Pros
   * Each table is usually accessed by one domain object only
 
 Cons
+
 * refactoring: Pushing fields up / down required database schema changes
 * changes of field of supertypes influence all subtype tables
 * a find on the superclass forces to check all subclasses (subtables) or a complex join
@@ -1092,6 +1136,7 @@ Vorgehen:
   * dependencies
 
 Vorgehen:
+
 1. Teilnehmende Klassen identifizieren
 1. Klassendiagramm malen
 1. Adding Method Names
@@ -1170,6 +1215,7 @@ Kann von Dynamic Design Model abgeleitet werden
   * Oder allgemeiner: Nicht direkt Referenzieren, sondern Interface bereitstellen, um den Referenzierten zu abstrahieren
 
 Verschiedenes:
+
 * Command-Query-Separation
   * Basic Bsp.: Getter und Setter
 * Law of Demeter: Clean Apis, keine Innereien
@@ -1221,6 +1267,7 @@ TODO: eventuell genauere erklärung der Schichten
 > Refacor with tests only!
 
 Bad smell: TODO: Lösungen eventuell hinzufügen (pdf 12 p. 48)
+
 * __Long method__: having code blocks lead by comments
 * __Duplicated code__
 * __Feature envy__: class excessively calls another class’s methods
@@ -1230,6 +1277,7 @@ Bad smell: TODO: Lösungen eventuell hinzufügen (pdf 12 p. 48)
 * ...
 
 When to refactor?
+
 *  when you find yourself looking up details frequently
     * what was the order of the method parameters again?
     * where was this method again and what does it do?
@@ -1239,10 +1287,12 @@ When to refactor?
 * Resultat nur korrekt, wenn funktionale und zeitliche Anforderungen eingehalten werden
 
 Soft vs Hard real-time
+
 * Soft: Degraded wenn nicht in korrekter Zeit
 * Hard: Inkorrekt wenn nicht in korrekter Zeit
 
 => Definiert durch
+
 * possible stimuli
   * periodic stimuli - occur at predictable intervals
   * aperiodoic stimuli - occur at unpredictable times
@@ -1255,6 +1305,7 @@ Soft vs Hard real-time
 
 ### RT-OS
 Benoetigt
+
 * real-time clock
 * interrupt handler
 * scheduler
@@ -1262,11 +1313,13 @@ Benoetigt
 * dispatcher (process execution)
 
 Prozessmanagement:
+
 * Interrupt level priority: Wer zuerst auf Event reagieren soll
 * Clock level priority: Wer die meiste Rechenzeit bekommt
 
 ### Scheduling Strategien
 Grobe Kategorisierungen:
+
 * static vs dynamic
 * non-preemptive vs pre-emptive
 * mit/ohne statische/dynamische Priorities
@@ -1274,6 +1327,7 @@ Grobe Kategorisierungen:
 <img src="pics/scheduling-strategies.png" width=400 />
 
 Strategien:
+
 * FIFO - dynamic, non pre-emptive, without priorities
 * Fixed Priorities - dynamic, static priorities
 * Earliest-Deadline First (EDF) - dynamic, dynamic priorities
@@ -1284,6 +1338,7 @@ Strategien:
 
 ### JamaicaVM: Real-Time JVM
 Java Probleme:
+
 * Indeterministisches Thread starting -> Hard Real-time Execution
 * garbage collection -> Real-time Garbage Collection
 * JIT
@@ -1294,6 +1349,7 @@ Java Probleme:
 * simulation and prototyping
 
 Prozess:
+
 * Stimuli identifizieren
 * Timing constraints
 * Plattform waehlen
@@ -1325,12 +1381,14 @@ Prozess:
 * Angreifer-Sicherheit (security)
 
 Safety != Reliability: TODO: passt safety übersetung oben?
+
 * Safety: Absence of danger for humans and environment
 * Reliability: probability or duration of failure-free operation
 * A fail-safe state is a state of the system where danger (for the
 environment) can be excluded
 
 Fehlerstufen
+
 * Fault
   * defect in a system
   * Systematic vs. Random
@@ -1400,6 +1458,7 @@ Fehlerstufen
 
 ### Testing is Sampling
 Test-Modell
+
 * Model for the expected operational use
 * Test environment that simulates the operational environment
 * Protocol for analysing the test data
@@ -1425,6 +1484,7 @@ p = 1 - n-th-root(1 - beta) = 1 - R // upper bound for the failure probability
 
 ## Software Security
 Goals
+
 * Confidentiality
 * Availability and integrity
 * User authentication
@@ -1433,6 +1493,7 @@ Goals
 * Anonymity
 
 Attacks
+
 * network sniffers and proxies
 * viruses and worms, Trojan horses, hacked download
 * rootkits, port scanner
@@ -1532,11 +1593,13 @@ Def:
 
 ### Prozess
 Manual
+
 1. Change code/development artefacts
 1. Test locally
 1. Commit change
 
 Automated
+
 1. Materialisation of dependencies
 1. Compilation
 1. Testing
@@ -1546,9 +1609,11 @@ Automated
 1. Provide meaningful developer feedback
 
 Manual
+
 * Fix broken builds immediately
 
 Vorteile:
+
 * Reduces risks
 * Reduces repetitive manual processes
 * Enables rapid deployment of software: Continuous Delivery
@@ -1637,9 +1702,13 @@ Reviews are meetings where a software artifact is examined
 * Partitioning: Multiple OS on single server
 * Isolation: No side effects between
 
-__Paravirtualization__: No emulated HW layer, but guest OS use hyper call (hypervisor interface calls)
+__Paravirtualization__: No emulated HW layer, but guest OS use hyper call (hypervisor interface calls -> Xen)
+
+Typ1-Hypervisor: Xen
+Typ2-Hypervisor: VMWare
 
 Advantages Virtualization:
+
 * Consolidation: Improved energy efficiency
 * Availability
 * Quality of Service (QoS)
@@ -1691,6 +1760,7 @@ Advantages Virtualization:
 * Corrective change - 17%
 
 Factors:
+
 * Internal factors
 * Technological factors
 * External factors
@@ -1699,6 +1769,7 @@ Factors:
 "Repeated changes inevitably degrade original design unless additional effort is invested to prevent this"
 
 Symptoms:
+
 * Limited understanding of the system
 * Outdated documentation
 * Longer development cycles
@@ -1714,12 +1785,14 @@ Symptoms:
 * Evolution = development + maintenance
 
 Maintenance Costs:
+
 * Understanding - 47%
 * Testing - 28%
 * Coding -  19%
 * Documenting - 6%
 
 Factors:
+
 * Software age
 * Developer skills and experience
 * Maintenance team stability
@@ -1729,6 +1802,7 @@ Factors:
 
 #### Process
 Iterative:
+
 * Change management
 * Change impact analysis
 * Reengineering
@@ -1744,6 +1818,7 @@ Iterative:
 
 #### Modularity
 Meyer's five criteria:
+
 * Decomposability of the problem into sub-problems
 * Composability of modules to produce new systems
 * Understandability of a module in isolation
@@ -1751,6 +1826,7 @@ Meyer's five criteria:
 * Protection - fault isolation
 
 Meyer's Rules for Modularity:
+
 * Direct Mapping - Structure of the solution should mirror the structure of the problem
 * Few Interfaces - Modules should communicate with as few others as possible
 * Small Interfaces (weak coupling) - Modules should exchange as little information as possible
